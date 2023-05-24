@@ -17,6 +17,7 @@
 		4CBEEA0C2A1E375C00A3FA49 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA0B2A1E375C00A3FA49 /* To_Do_ListTests.swift */; };
 		4CBEEA162A1E375C00A3FA49 /* To_Do_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA152A1E375C00A3FA49 /* To_Do_ListUITests.swift */; };
 		4CBEEA182A1E375C00A3FA49 /* To_Do_ListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA172A1E375C00A3FA49 /* To_Do_ListUITestsLaunchTests.swift */; };
+		4CBEEA292A1E427700A3FA49 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA282A1E427700A3FA49 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4CBEEA112A1E375C00A3FA49 /* To-Do ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To-Do ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBEEA152A1E375C00A3FA49 /* To_Do_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITests.swift; sourceTree = "<group>"; };
 		4CBEEA172A1E375C00A3FA49 /* To_Do_ListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CBEEA282A1E427700A3FA49 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				4CBEE9F12A1E375A00A3FA49 /* AppDelegate.swift */,
 				4CBEE9F32A1E375A00A3FA49 /* SceneDelegate.swift */,
 				4CBEE9F52A1E375A00A3FA49 /* ViewController.swift */,
+				4CBEEA282A1E427700A3FA49 /* TabBarViewController.swift */,
 				4CBEE9F72A1E375A00A3FA49 /* Main.storyboard */,
 				4CBEE9FD2A1E375B00A3FA49 /* Assets.xcassets */,
 				4CBEE9FF2A1E375C00A3FA49 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				4CBEE9F62A1E375A00A3FA49 /* ViewController.swift in Sources */,
 				4CBEE9F22A1E375A00A3FA49 /* AppDelegate.swift in Sources */,
 				4CBEE9F42A1E375A00A3FA49 /* SceneDelegate.swift in Sources */,
+				4CBEEA292A1E427700A3FA49 /* TabBarViewController.swift in Sources */,
 				4CBEE9FC2A1E375A00A3FA49 /* To_Do_List.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
