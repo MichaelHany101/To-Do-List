@@ -3,6 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,6 +15,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lYK-qN-f13" customClass="TabBarViewController" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tka-8b-20d">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -24,14 +27,146 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="lB9-nw-gmF" kind="relationship" relationship="viewControllers" id="xh3-rC-wf0"/>
-                        <segue destination="l1Y-VD-mT5" kind="relationship" relationship="viewControllers" id="iro-ji-iea"/>
+                        <segue destination="1s0-69-eoi" kind="relationship" relationship="viewControllers" id="xh3-rC-wf0"/>
+                        <segue destination="4iA-jW-48g" kind="relationship" relationship="viewControllers" id="iro-ji-iea"/>
                         <segue destination="Znd-e4-WaI" kind="relationship" relationship="viewControllers" id="Yay-76-1X6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNS-OQ-qN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="151.90839694656489" y="-911.26760563380287"/>
+        </scene>
+        <!--Add EditVC-->
+        <scene sceneID="rwz-wd-lN0">
+            <objects>
+                <viewController id="9SH-ya-KC5" customClass="AddEditVC" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BJq-GL-1Gc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZH-TU-x17">
+                                <rect key="frame" x="8" y="135" width="168" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhf-Jo-AZV">
+                                <rect key="frame" x="8" y="245" width="248" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type ToDo's Name Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kwc-1H-Y6z">
+                                <rect key="frame" x="8" y="179" width="377" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type ToDo's Description Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aGx-uM-bj7">
+                                <rect key="frame" x="8" y="289" width="377" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Pm-a7-Vcr">
+                                <rect key="frame" x="8" y="399" width="377" height="32"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <segments>
+                                    <segment title="Low"/>
+                                    <segment title="Medium"/>
+                                    <segment title="High"/>
+                                </segments>
+                                <color key="tintColor" name="AccentColor"/>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo Piriority:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Er-ko-16d">
+                                <rect key="frame" x="8" y="355" width="195.66666666666666" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-Tn-yRp">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="HSz-BJ-3qS"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWB-CS-T7b">
+                                <rect key="frame" x="151" y="553" width="91" height="56"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addEditActionButton:" destination="9SH-ya-KC5" eventType="touchUpInside" id="iuE-SU-weZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jk-Ye-glC">
+                                <rect key="frame" x="8" y="462" width="203" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zlQ-ZJ-LgT">
+                                <rect key="frame" x="8" y="506" width="377" height="32"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <segments>
+                                    <segment title="To Do"/>
+                                    <segment title="In Progress"/>
+                                    <segment title="Finished"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TKx-2N-pjM"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Pm-a7-Vcr" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" constant="8" id="0Vn-4R-aZ1"/>
+                            <constraint firstItem="Ift-Tn-yRp" firstAttribute="trailing" secondItem="TKx-2N-pjM" secondAttribute="trailing" id="1rL-AO-q6u"/>
+                            <constraint firstItem="TKx-2N-pjM" firstAttribute="trailing" secondItem="zlQ-ZJ-LgT" secondAttribute="trailing" constant="8" id="4a0-51-ES6"/>
+                            <constraint firstItem="8Jk-Ye-glC" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" constant="8" id="6r4-1D-DlH"/>
+                            <constraint firstItem="8Jk-Ye-glC" firstAttribute="top" secondItem="5Pm-a7-Vcr" secondAttribute="bottom" constant="32" id="7as-B7-sAl"/>
+                            <constraint firstItem="Kwc-1H-Y6z" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" constant="8" id="8ju-wg-gPD"/>
+                            <constraint firstItem="Bhf-Jo-AZV" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" constant="8" id="9UU-My-uKF"/>
+                            <constraint firstItem="TKx-2N-pjM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Er-ko-16d" secondAttribute="trailing" symbolic="YES" id="CfQ-eB-R2x"/>
+                            <constraint firstItem="pWB-CS-T7b" firstAttribute="centerX" secondItem="BJq-GL-1Gc" secondAttribute="centerX" id="FGl-Y4-pca"/>
+                            <constraint firstItem="pWB-CS-T7b" firstAttribute="top" secondItem="zlQ-ZJ-LgT" secondAttribute="bottom" constant="16" id="FHT-E9-lTS"/>
+                            <constraint firstItem="Kwc-1H-Y6z" firstAttribute="top" secondItem="IZH-TU-x17" secondAttribute="bottom" constant="8" id="G0p-CX-WkW"/>
+                            <constraint firstItem="aGx-uM-bj7" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" constant="8" id="LLG-uB-UTZ"/>
+                            <constraint firstItem="TKx-2N-pjM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bhf-Jo-AZV" secondAttribute="trailing" symbolic="YES" id="RmQ-we-Gaw"/>
+                            <constraint firstItem="Ift-Tn-yRp" firstAttribute="top" secondItem="TKx-2N-pjM" secondAttribute="top" id="Sag-MJ-YHN"/>
+                            <constraint firstItem="TKx-2N-pjM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8Jk-Ye-glC" secondAttribute="trailing" symbolic="YES" id="YDB-bl-blv"/>
+                            <constraint firstItem="TKx-2N-pjM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IZH-TU-x17" secondAttribute="trailing" symbolic="YES" id="YSe-Ny-BWS"/>
+                            <constraint firstItem="IZH-TU-x17" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" constant="8" id="ZNW-j2-FAP"/>
+                            <constraint firstItem="TKx-2N-pjM" firstAttribute="trailing" secondItem="5Pm-a7-Vcr" secondAttribute="trailing" constant="8" id="d86-XP-pUf"/>
+                            <constraint firstItem="6Er-ko-16d" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" constant="8" id="fhc-av-3En"/>
+                            <constraint firstItem="aGx-uM-bj7" firstAttribute="top" secondItem="Bhf-Jo-AZV" secondAttribute="bottom" constant="8" id="hKl-mG-GSD"/>
+                            <constraint firstItem="TKx-2N-pjM" firstAttribute="trailing" secondItem="Kwc-1H-Y6z" secondAttribute="trailing" constant="8" id="khy-eG-Yts"/>
+                            <constraint firstItem="Ift-Tn-yRp" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" id="l79-0F-Nqp"/>
+                            <constraint firstItem="Bhf-Jo-AZV" firstAttribute="top" secondItem="Kwc-1H-Y6z" secondAttribute="bottom" constant="32" id="lVr-IE-9Y9"/>
+                            <constraint firstItem="zlQ-ZJ-LgT" firstAttribute="top" secondItem="8Jk-Ye-glC" secondAttribute="bottom" constant="8" id="mpd-hm-dAP"/>
+                            <constraint firstItem="5Pm-a7-Vcr" firstAttribute="top" secondItem="6Er-ko-16d" secondAttribute="bottom" constant="8" id="rm3-zf-ef3"/>
+                            <constraint firstItem="IZH-TU-x17" firstAttribute="top" secondItem="Ift-Tn-yRp" secondAttribute="bottom" constant="32" id="vgT-Kl-x1T"/>
+                            <constraint firstItem="zlQ-ZJ-LgT" firstAttribute="leading" secondItem="TKx-2N-pjM" secondAttribute="leading" constant="8" id="wEf-bc-jF9"/>
+                            <constraint firstItem="6Er-ko-16d" firstAttribute="top" secondItem="aGx-uM-bj7" secondAttribute="bottom" constant="32" id="xLu-hC-In0"/>
+                            <constraint firstItem="TKx-2N-pjM" firstAttribute="trailing" secondItem="aGx-uM-bj7" secondAttribute="trailing" constant="8" id="yx9-cO-s5K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addEditButton" destination="pWB-CS-T7b" id="NKA-54-b1U"/>
+                        <outlet property="todoDescription" destination="aGx-uM-bj7" id="5Hc-XL-hno"/>
+                        <outlet property="todoName" destination="Kwc-1H-Y6z" id="O8F-aX-FOF"/>
+                        <outlet property="todoPiriority" destination="5Pm-a7-Vcr" id="zvc-qg-eks"/>
+                        <outlet property="todoProgress" destination="zlQ-ZJ-LgT" id="3Ii-SO-jsM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="men-eN-8R8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="-1601"/>
         </scene>
         <!--Finished-->
         <scene sceneID="9ig-KS-LE5">
@@ -87,9 +222,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdT-it-c2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1238.9312977099237" y="-1605.6338028169014"/>
+            <point key="canvasLocation" x="1239" y="-1601"/>
         </scene>
-        <!--To-Do-->
+        <!--To Do TableVC-->
         <scene sceneID="kcZ-bX-nYp">
             <objects>
                 <tableViewController id="lB9-nw-gmF" customClass="ToDoTableVC" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -139,13 +274,13 @@
                             <outlet property="delegate" destination="lB9-nw-gmF" id="RIH-Lw-Br5"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="To-Do" image="list.bullet.clipboard.fill" catalog="system" id="aDI-0K-eJD"/>
+                    <navigationItem key="navigationItem" id="871-kc-okZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K3T-Fp-1mP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="-911"/>
+            <point key="canvasLocation" x="2204" y="-911"/>
         </scene>
-        <!--In Progress-->
+        <!--In Progress TableVC-->
         <scene sceneID="m7C-84-VeA">
             <objects>
                 <tableViewController id="l1Y-VD-mT5" customClass="InProgressTableVC" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -195,17 +330,58 @@
                             <outlet property="delegate" destination="l1Y-VD-mT5" id="Voe-Ih-yhr"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="In Progress" image="figure.run" catalog="system" id="U0h-xj-FWJ"/>
+                    <navigationItem key="navigationItem" id="WI6-zw-Wn5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRW-t1-hJO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1238.9312977099237" y="-175.35211267605635"/>
+            <point key="canvasLocation" x="1239" y="-175"/>
+        </scene>
+        <!--In Progress-->
+        <scene sceneID="tnE-N9-UEx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4iA-jW-48g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="In Progress" image="figure.run" catalog="system" id="U0h-xj-FWJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f7P-fZ-sgX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="l1Y-VD-mT5" kind="relationship" relationship="rootViewController" id="gr0-Lw-za4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPO-Ww-olB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="-175"/>
+        </scene>
+        <!--To-Do-->
+        <scene sceneID="m4N-pg-X6Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1s0-69-eoi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="To-Do" image="list.bullet.clipboard.fill" catalog="system" id="aDI-0K-eJD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LXy-6n-Irk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lB9-nw-gmF" kind="relationship" relationship="rootViewController" id="Eb7-Tl-wbW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71p-HN-A5r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1255.7251908396945" y="-911.26760563380287"/>
         </scene>
     </scenes>
     <resources>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="figure.run" catalog="system" width="115" height="128"/>
         <image name="list.bullet.clipboard.fill" catalog="system" width="103" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
