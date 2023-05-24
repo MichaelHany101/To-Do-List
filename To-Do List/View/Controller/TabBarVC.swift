@@ -18,7 +18,7 @@ class TabBarViewController: UITabBarController {
     func changeTabBarRadius() {
         self.tabBar.layer.masksToBounds = true
         self.tabBar.isTranslucent = true
-        self.tabBar.layer.cornerRadius = 50
+        self.tabBar.layer.cornerRadius = 30
         self.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
     

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4CBEE9F22A1E375A00A3FA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEE9F12A1E375A00A3FA49 /* AppDelegate.swift */; };
 		4CBEE9F42A1E375A00A3FA49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEE9F32A1E375A00A3FA49 /* SceneDelegate.swift */; };
-		4CBEE9F62A1E375A00A3FA49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEE9F52A1E375A00A3FA49 /* ViewController.swift */; };
 		4CBEE9F92A1E375A00A3FA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEE9F72A1E375A00A3FA49 /* Main.storyboard */; };
 		4CBEE9FC2A1E375A00A3FA49 /* To_Do_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEE9FA2A1E375A00A3FA49 /* To_Do_List.xcdatamodeld */; };
 		4CBEE9FE2A1E375B00A3FA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEE9FD2A1E375B00A3FA49 /* Assets.xcassets */; };
@@ -17,7 +16,10 @@
 		4CBEEA0C2A1E375C00A3FA49 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA0B2A1E375C00A3FA49 /* To_Do_ListTests.swift */; };
 		4CBEEA162A1E375C00A3FA49 /* To_Do_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA152A1E375C00A3FA49 /* To_Do_ListUITests.swift */; };
 		4CBEEA182A1E375C00A3FA49 /* To_Do_ListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA172A1E375C00A3FA49 /* To_Do_ListUITestsLaunchTests.swift */; };
-		4CBEEA292A1E427700A3FA49 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA282A1E427700A3FA49 /* TabBarViewController.swift */; };
+		4CBEEA292A1E427700A3FA49 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA282A1E427700A3FA49 /* TabBarVC.swift */; };
+		4CBEEA382A1E55C200A3FA49 /* ToDoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA372A1E55C200A3FA49 /* ToDoTableVC.swift */; };
+		4CBEEA3A2A1E577E00A3FA49 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA392A1E577E00A3FA49 /* TableViewCell.swift */; };
+		4CBEEA3C2A1E587E00A3FA49 /* InProgressTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA3B2A1E587E00A3FA49 /* InProgressTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,6 @@
 		4CBEE9EE2A1E375A00A3FA49 /* To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBEE9F12A1E375A00A3FA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBEE9F32A1E375A00A3FA49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CBEE9F52A1E375A00A3FA49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CBEE9F82A1E375A00A3FA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CBEE9FB2A1E375A00A3FA49 /* To_Do_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = To_Do_List.xcdatamodel; sourceTree = "<group>"; };
 		4CBEE9FD2A1E375B00A3FA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,7 +53,10 @@
 		4CBEEA112A1E375C00A3FA49 /* To-Do ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To-Do ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBEEA152A1E375C00A3FA49 /* To_Do_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITests.swift; sourceTree = "<group>"; };
 		4CBEEA172A1E375C00A3FA49 /* To_Do_ListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4CBEEA282A1E427700A3FA49 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4CBEEA282A1E427700A3FA49 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		4CBEEA372A1E55C200A3FA49 /* ToDoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableVC.swift; sourceTree = "<group>"; };
+		4CBEEA392A1E577E00A3FA49 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4CBEEA3B2A1E587E00A3FA49 /* InProgressTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +107,10 @@
 		4CBEE9F02A1E375A00A3FA49 /* To-Do List */ = {
 			isa = PBXGroup;
 			children = (
-				4CBEE9F12A1E375A00A3FA49 /* AppDelegate.swift */,
-				4CBEE9F32A1E375A00A3FA49 /* SceneDelegate.swift */,
-				4CBEE9F52A1E375A00A3FA49 /* ViewController.swift */,
-				4CBEEA282A1E427700A3FA49 /* TabBarViewController.swift */,
-				4CBEE9F72A1E375A00A3FA49 /* Main.storyboard */,
-				4CBEE9FD2A1E375B00A3FA49 /* Assets.xcassets */,
-				4CBEE9FF2A1E375C00A3FA49 /* LaunchScreen.storyboard */,
+				4CBEEA2D2A1E47AD00A3FA49 /* Utilities */,
+				4CBEEA2B2A1E479700A3FA49 /* Model */,
+				4CBEEA2A2A1E478900A3FA49 /* View */,
 				4CBEEA022A1E375C00A3FA49 /* Info.plist */,
-				4CBEE9FA2A1E375A00A3FA49 /* To_Do_List.xcdatamodeld */,
 			);
 			path = "To-Do List";
 			sourceTree = "<group>";
@@ -131,6 +130,53 @@
 				4CBEEA172A1E375C00A3FA49 /* To_Do_ListUITestsLaunchTests.swift */,
 			);
 			path = "To-Do ListUITests";
+			sourceTree = "<group>";
+		};
+		4CBEEA2A2A1E478900A3FA49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEEA362A1E558A00A3FA49 /* Controller */,
+				4CBEEA2F2A1E488C00A3FA49 /* UI */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CBEEA2B2A1E479700A3FA49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEE9FA2A1E375A00A3FA49 /* To_Do_List.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CBEEA2D2A1E47AD00A3FA49 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEE9F32A1E375A00A3FA49 /* SceneDelegate.swift */,
+				4CBEE9F12A1E375A00A3FA49 /* AppDelegate.swift */,
+				4CBEE9FD2A1E375B00A3FA49 /* Assets.xcassets */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4CBEEA2F2A1E488C00A3FA49 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEE9F72A1E375A00A3FA49 /* Main.storyboard */,
+				4CBEE9FF2A1E375C00A3FA49 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4CBEEA362A1E558A00A3FA49 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEEA282A1E427700A3FA49 /* TabBarVC.swift */,
+				4CBEEA372A1E55C200A3FA49 /* ToDoTableVC.swift */,
+				4CBEEA392A1E577E00A3FA49 /* TableViewCell.swift */,
+				4CBEEA3B2A1E587E00A3FA49 /* InProgressTableVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,11 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBEE9F62A1E375A00A3FA49 /* ViewController.swift in Sources */,
+				4CBEEA3C2A1E587E00A3FA49 /* InProgressTableVC.swift in Sources */,
 				4CBEE9F22A1E375A00A3FA49 /* AppDelegate.swift in Sources */,
 				4CBEE9F42A1E375A00A3FA49 /* SceneDelegate.swift in Sources */,
-				4CBEEA292A1E427700A3FA49 /* TabBarViewController.swift in Sources */,
+				4CBEEA292A1E427700A3FA49 /* TabBarVC.swift in Sources */,
+				4CBEEA3A2A1E577E00A3FA49 /* TableViewCell.swift in Sources */,
 				4CBEE9FC2A1E375A00A3FA49 /* To_Do_List.xcdatamodeld in Sources */,
+				4CBEEA382A1E55C200A3FA49 /* ToDoTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
