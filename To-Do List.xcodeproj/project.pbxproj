@@ -20,6 +20,7 @@
 		4CBEEA382A1E55C200A3FA49 /* ToDoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA372A1E55C200A3FA49 /* ToDoTableVC.swift */; };
 		4CBEEA3A2A1E577E00A3FA49 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA392A1E577E00A3FA49 /* TableViewCell.swift */; };
 		4CBEEA3C2A1E587E00A3FA49 /* InProgressTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA3B2A1E587E00A3FA49 /* InProgressTableVC.swift */; };
+		4CBEEA3E2A1E5C5500A3FA49 /* AddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEEA3D2A1E5C5500A3FA49 /* AddEditVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4CBEEA372A1E55C200A3FA49 /* ToDoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableVC.swift; sourceTree = "<group>"; };
 		4CBEEA392A1E577E00A3FA49 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4CBEEA3B2A1E587E00A3FA49 /* InProgressTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTableVC.swift; sourceTree = "<group>"; };
+		4CBEEA3D2A1E5C5500A3FA49 /* AddEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				4CBEEA372A1E55C200A3FA49 /* ToDoTableVC.swift */,
 				4CBEEA392A1E577E00A3FA49 /* TableViewCell.swift */,
 				4CBEEA3B2A1E587E00A3FA49 /* InProgressTableVC.swift */,
+				4CBEEA3D2A1E5C5500A3FA49 /* AddEditVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				4CBEEA3C2A1E587E00A3FA49 /* InProgressTableVC.swift in Sources */,
 				4CBEE9F22A1E375A00A3FA49 /* AppDelegate.swift in Sources */,
+				4CBEEA3E2A1E5C5500A3FA49 /* AddEditVC.swift in Sources */,
 				4CBEE9F42A1E375A00A3FA49 /* SceneDelegate.swift in Sources */,
 				4CBEEA292A1E427700A3FA49 /* TabBarVC.swift in Sources */,
 				4CBEEA3A2A1E577E00A3FA49 /* TableViewCell.swift in Sources */,
